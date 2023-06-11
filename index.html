@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All in one Javascript course</title>
+    <link rel="stylesheet"
+            href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/xcode.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <script>        
+        console.log('Parabéns, se você está vendo esta mensagem é só seguir com as informações da pragina principal. Vamos aprender juntos!')
+        const jsStrPrint = 'Existem 3 formas de executar codigos Javascript. O script contendo esta variavél está incorporado diretamente entre as tags Head do documento Html.'
+    </script>
+    <script src="js/main.js" defer></script>
+    <script src="js/strict.js" defer></script>
+</head>
+<body>
+    <dialog open>
+        <p>Olá Mundo</p>
+        <p>Para começar a aprender aperte Ctrl + Shift + i no Chrome/Edge e Ctrl + Shift + k no Firefox, para abrir as ferramentas do desenvolvedor.</p>
+        <form method="dialog">
+          <button>OK</button>
+        </form>
+    </dialog>
+    <header>
+        <h1>All in one Javascript course Website</h1>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Lesson 1</a></li>
+                <li><a href="">Lesson 2</a></li>
+                <li><a href="">Lesson 3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Lesson 1</h2>
+                <p>
+                    Sua primeira lição é acessar as ferramentas de desenvolvedor, caso você tenha seguido as instruções iniciais do navegador o console de desenvolvimento foi mostrado em alguma parte da tela do navegador. Leia a mensagem de boas vindas e digite: <code>console.log('Hello World')</code>; pressione enter para executar seu primeiro codigo Javascript
+                </p>
+                <p>
+                    A frase Hello World deverá aparecer como resposta no console. Experimente outras frases e observe o comportamento do console ao dar as respostas. Não feche o console ainda, utilizaremos ele nos proximos passos.
+                </p>
+                <details>
+                    <summary>Curiosidade !!</summary>
+                    <p>O "Hello World" ou em português "Olá mundo", representa o despertar para a programação. É a primeira linha de código ensinada em qualquer linguagem de programação. Existem várias formas diferentes de executar este simples codigo, isso vale também para códigos mais complexos.</p>
+                </details>                  
+        </section>
+        <section>
+            <h2>Lesson 2</h2>
+                <p>
+                    Ainda com o console aberto digite <code>console.log(jsStrPrint)</code> respeitando as maisculas e minusculas. Você irá acessar uma das variaveis configuradas pelo desenvolvedor deste website. Observe a resposta do console.
+                </p>
+                <button onclick="(function showHidden(){ const hiddenP1 = document.querySelector('#hiddenP1')
+                                  hiddenP1.removeAttribute('hidden')})();">Desbloquear conteudo oculto</button>
+                <div id="hiddenP1" hidden>
+                <p>
+                    Parabéns você desbloqueou o conteudo oculto. Para realizar essa ação inserimos um codigo JavaScript diretamente dentro da Tag do botão no codigo HTML. Este metodo de utilizar o Javascript é chamado de "Inline Javascrpit" ou simplesmente JavaScript em linha
+                </p>
+                    <pre>&lt;button onclick="<code class="language-javascript">function showHidden(){
+    const hiddenP1 = document.querySelector('#hiddenP1')
+    hiddenP1.removeAttribute('hidden')
+}</code>">
+Desbloquear conteudo oculto
+&lt;/button></pre>
+                <p>
+                    Voltando ao console digite <code>chamarConsole()</code>
+                </p>
+                </div>                
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
